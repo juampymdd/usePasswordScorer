@@ -33,7 +33,6 @@ function App() {
   const [score, setScore] = useState(0)
   const [description, setDescription] = useState('')
   const [color, setColor] = useState('red')
-  const [laking, setLaking] = useState<string[]>([])
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedLanguage(event.target.value)
@@ -71,7 +70,6 @@ function App() {
     const { score, description, feedback } = passwordScorer(password, selectedLanguage);
     setScore(score);
     setDescription(description);
-    setLaking(feedback);
     feedback.map((item) => {
       toast.error(item, {
         className: 'custom-toast-error'
@@ -85,7 +83,6 @@ function App() {
     const { score, description, feedback } = passwordScorer(password, selectedLanguage);
     setScore(score);
     setDescription(description);
-    setLaking(feedback);
 
     feedback.map((item) => {
       toast.error(item, {
