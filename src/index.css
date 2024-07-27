@@ -225,6 +225,9 @@ select {
   font-weight: 600;
   color: white;
   margin: 2px;
+
+  text-align: center;
+
 }
 
 /* Extra Small Devices, Phones (up to 480px) */
