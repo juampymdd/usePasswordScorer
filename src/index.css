@@ -129,7 +129,6 @@ input {
 select {
   max-width: 400px;
   border: 1px solid #f0f0f0;
-  -webkit-appearance: none;
 }
 
 .form-control label {
@@ -205,6 +204,7 @@ select {
   letter-spacing: 2px;
   background: -webkit-linear-gradient(45deg, #fbae3c, #e1685e);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
