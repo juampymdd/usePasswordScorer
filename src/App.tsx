@@ -106,7 +106,6 @@ function App() {
   return (
     <main className="container">
       <Toaster expand duration={5000} />
-      <div className="form-overlay">
         <section className="form-container">
 
           <h1>Assess your password strength</h1>
@@ -155,7 +154,6 @@ function App() {
             </div>
           </div>
         </section>
-      </div>
       
     </main>
   )

@@ -38,6 +38,9 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 
   /* font-weight: <weight>;
   font-style: normal; */
@@ -51,6 +54,7 @@ body {
   align-items: center;
   height: 100vh;
   overflow: hidden;
+  padding: 0
 }
 
 .form-group {
@@ -65,7 +69,8 @@ body {
 }
 
 .form-overlay {
-  max-width: 500px;
+  max-width: 600px;
+  padding: 20px;
   backdrop-filter: blur(4px);
   background-color: #0000001f;
   width: 100%;
@@ -75,12 +80,17 @@ body {
 }
 
 .form-container {
+  max-width: 500px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 20px;
   align-items: center;
+  backdrop-filter: blur(4px);
+  background-color: #0000001f;
+  border: 1px solid rgba(255, 255, 255, 0.178);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .form-container select option {
@@ -206,6 +216,8 @@ select {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  text-align: center;
 }
 
 .custom-header p {
@@ -213,4 +225,96 @@ select {
   font-weight: 600;
   color: white;
   margin: 2px;
+}
+
+/* Extra Small Devices, Phones (up to 480px) */
+@media (max-width: 480px) {
+
+  .form-group {
+    max-width: 300px;
+  }
+
+  .form-container {
+    max-width: 350px;
+  }
+
+  .custom-header h1 {
+    font-size: 3rem;
+  }
+
+  .custom-header p {
+    font-size: 0.8rem;
+  }
+
+  .img-button {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+
+
+  .form-control {
+    width: 100%;
+    padding-block: 8px;
+    background-color: #ffffff00;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: .7rem;
+    text-align: center;
+    color: white;
+  }
+}
+
+/* Small Devices, Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .form-group {
+    max-width: 300px;
+  }
+
+  .form-container {
+    max-width: 320px;
+  }
+
+  .custom-header h1 {
+    font-size: 4rem;
+  }
+
+  .custom-header p {
+    font-size: 0.9rem;
+  }
+
+  .img-button {
+    width: 45px;
+    height: 45px;
+    padding: 8px;
+  }
+
+  .form-control label {
+    font-size: 1.75rem;
+  }
+}
+
+/* Medium Devices, Desktops (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+
+
+  .custom-header h1 {
+    font-size: 4.5rem;
+  }
+
+  .custom-header p {
+    font-size: 1rem;
+  }
+
+  .img-button {
+    width: 48px;
+    height: 48px;
+    padding: 9px;
+  }
+
+  .form-control label {
+    font-size: 1.85rem;
+  }
 }
